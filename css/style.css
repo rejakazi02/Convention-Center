@@ -1,0 +1,19 @@
+*{
+
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+.nav-link:hover{
+
+    color: yellowgreen !important;
+}
+.navbar-brand:hover{
+
+    color: yellowgreen !important;
+}
+
+.aulbamBtn:hover{
+    color: yellowgreen !important;
+}
