@@ -152,17 +152,25 @@
 
 
 
-        <!--************************* Tost  Section start ************************** -->
+    <!--************************* Tost  Section start ************************** -->
+
+
+    <section class="float-end mb-5">
+      <div role="alert" aria-live="assertive" aria-atomic="true" class="toast w-100 h-25" data-bs-autohide="false" style="margin-top: -58px;">
+        <div class="toast-header bg-light">
+          <small>
+            <i class="fas fa-gift text-danger"></i> 25% off on next
+            booking</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </section>
+
+    <!--************************* Tost  Section end ************************** -->
 
 
 
 
-
- <!--************************* Tost  Section start ************************** -->
-
-
-
-        
 
   </main>
 
@@ -170,6 +178,14 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+  <script>
+    window.onload = (event) => {
+      let myAlert = document.querySelector('.toast');
+      let bsAlert = new bootstrap.Toast(myAlert);
+      bsAlert.show();
+    }
   </script>
 </body>
 
